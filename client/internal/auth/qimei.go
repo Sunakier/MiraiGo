@@ -15,7 +15,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/Sunakier/MiraiGo/utils"
 	"github.com/tidwall/gjson"
 )
 

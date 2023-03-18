@@ -1,6 +1,9 @@
 # MiraiGo
 qq-android 协议的golang实现 移植于 [mirai](https://github.com/mamoe/mirai)
 
+# 声明
+本项目基于 [MiraiGo](https://github.com/Mrs4s/MiraiGo) 魔改实现，仅仅为个人使用
+
 ## 使用前声明
 本项目为协议实现，不推荐直接使用。
 
@@ -11,7 +14,7 @@ CQHTTP 用户建议使用基于 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) 
 ## 使用方法
 
 ```bash
-go get -u github.com/Mrs4s/MiraiGo
+go get -u github.com/Sunakier/MiraiGo
 ```
 
 ## 支持的功能

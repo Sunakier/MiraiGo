@@ -12,15 +12,15 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/pb/cmd0x388"
-	"github.com/Mrs4s/MiraiGo/client/pb/longmsg"
-	"github.com/Mrs4s/MiraiGo/client/pb/msg"
-	"github.com/Mrs4s/MiraiGo/client/pb/multimsg"
-	"github.com/Mrs4s/MiraiGo/client/pb/oidb"
-	"github.com/Mrs4s/MiraiGo/internal/proto"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/Sunakier/MiraiGo/client/internal/network"
+	"github.com/Sunakier/MiraiGo/client/pb/cmd0x388"
+	"github.com/Sunakier/MiraiGo/client/pb/longmsg"
+	"github.com/Sunakier/MiraiGo/client/pb/msg"
+	"github.com/Sunakier/MiraiGo/client/pb/multimsg"
+	"github.com/Sunakier/MiraiGo/client/pb/oidb"
+	"github.com/Sunakier/MiraiGo/internal/proto"
+	"github.com/Sunakier/MiraiGo/message"
+	"github.com/Sunakier/MiraiGo/utils"
 )
 
 func init() {

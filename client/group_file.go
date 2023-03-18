@@ -8,10 +8,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/pb/oidb"
-	"github.com/Mrs4s/MiraiGo/internal/proto"
-	"github.com/Mrs4s/MiraiGo/message"
+	"github.com/Sunakier/MiraiGo/client/internal/network"
+	"github.com/Sunakier/MiraiGo/client/pb/oidb"
+	"github.com/Sunakier/MiraiGo/internal/proto"
+	"github.com/Sunakier/MiraiGo/message"
 )
 
 type (

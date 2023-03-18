@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/client/pb/oidb"
-	"github.com/Mrs4s/MiraiGo/internal/proto"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/Sunakier/MiraiGo/client/pb/oidb"
+	"github.com/Sunakier/MiraiGo/internal/proto"
+	"github.com/Sunakier/MiraiGo/message"
+	"github.com/Sunakier/MiraiGo/utils"
 )
 
 type musicTypeInfo struct {

@@ -511,6 +511,17 @@ func (c *QQClient) SendFriendPoke(target int64) {
 	_, _ = c.sendAndWait(c.buildFriendPokePacket(target))
 }
 
+func (c *QQClient) WQGetCookiesWithDomain(domain string) (cookies string, skey string) {
+	return c.getCookiesWithDomain(domain), c.getSKey()
+}
+
+func (c *QQClient) WQGetCookiesAllC() string {
+	for k, v := range c.sig.PsKeyMap {
+		fmt.Printf("key=%s, value=%s\n", k, string(v))
+	}
+	return c.getCookiesAllC()
+}
+
 func (c *QQClient) ReloadGroupList() error {
 	c.groupListLock.Lock()
 	defer c.groupListLock.Unlock()
@@ -682,12 +693,16 @@ func (c *QQClient) getCookies() string {
 
 func (c *QQClient) getCookiesWithDomain(domain string) string {
 	cookie := c.getCookies()
-
 	if psKey, ok := c.sig.PsKeyMap[domain]; ok {
 		return fmt.Sprintf("%s p_uin=o%d; p_skey=%s;", cookie, c.Uin, psKey)
 	} else {
 		return cookie
 	}
+}
+
+func (c *QQClient) getCookiesAllC() string {
+	print(c.sig.PsKeyMap)
+	return ""
 }
 
 func (c *QQClient) getCSRFToken() int {
